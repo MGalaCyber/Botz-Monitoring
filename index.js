@@ -1,5 +1,4 @@
 require("http").createServer((req, res) => res.end("bot is live")).listen(process.env.PORT || 8080)
-require('colors')
 require('dotenv').config();
 const {
     Client,
