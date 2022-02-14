@@ -77,7 +77,7 @@ client.on("presenceUpdate", async (oldPresence, newPresence) => {
                 newPresence.guild.channels.cache.get(process.env.Channels).send({
                     embeds: [new MessageEmbed()
                     .setTitle(`<a:Red_bip:942653953571713104>︱Downtime Alert`)
-                    .setDescription(`Looks like **${newPresence.user.tag}**went **Offline! **`)
+                    .setDescription(`Looks like **${newPresence.user.tag}** went **Offline! **`)
                     .setColor(`RED`)
                     .setThumbnail(newPresence.user.avatarURL({ format: "png", size: 1024 }))
                     .setFooter(`Downtime Alert`, newPresence.user.avatarURL({ format: "png", size: 1024 }))
